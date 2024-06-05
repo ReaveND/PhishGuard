@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+.nav{
+    background: #5DADE2;  /* fallback for old browsers */
+    height:58px;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+.logo{
+    /* border: 1px solid black; */
+    float: left;
+    height: 48px;
+    width:20%;
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    margin:5px;
+}
+
+.menu{
+    color:white;
+    width:50%;
+    float: right;
+    margin: 9px 50px 5px 50px;
+    /* border: 2px solid black; */
+}
+
+.menu a{
+    color:white;
+    font-size: 18px;
+    padding: 15px 60px 0px 60px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    /* border-bottom:2px solid white; */
+    color:lightblue;
+}
+
+.about-heading{
+    text-align: center;
+}
+
+.page1{
+    height:100vh;
+    background: #008080; background-image: radial-gradient(at 18.4% 92.7%, #008080 0px, transparent 50%),radial-gradient(at 69.0% 72.5%, #4ECDC4 0px, transparent 50%),radial-gradient(at 24.7% 45.5%, #d3eddc 0px, transparent 50%),radial-gradient(at 79.4% 30.7%, #5DADE2 0px, transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-collection{
+    /* background-color: red; */
+    height: 80%;
+    width:90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+.card1{
+    height:45%;
+    width: 20%;
+    border-radius: 10px;
+    background-color: #d3eddc;
+    padding-top: 2.7rem;
+}
+.card1 .profile{
+    height: 40%;
+    
+    /* background-color: rebeccapurple; */
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.card1 .profile .profile-img{
+    /* background-color: black; */
+    height:100%;
+    width: 45%;
+    border-radius: 100%;
+}
+
+.card1 .profile .profile-img img{
+    height: 110px;
+    width: 100%;
+    border-radius: 100%;
+
+}
+.card1 .name,.stream{
+    margin-top: 1.2rem;
+}
+.card1 .name,.stream h3{
+    text-align: center;
+}
+
+.card1:hover{
+    /* border:2px solid #008080; */
+    transform:rotateY(360deg);
+    transition: 2s;
+}
+
+
+@media screen and (max-width:360px){
+    .page1{
+        
+    }
+    body{
+        background: #008080; background-image: radial-gradient(at 18.4% 92.7%, #008080 0px, transparent 50%),radial-gradient(at 69.0% 72.5%, #4ECDC4 0px, transparent 50%),radial-gradient(at 24.7% 45.5%, #d3eddc 0px, transparent 50%),radial-gradient(at 79.4% 30.7%, #5DADE2 0px, transparent 50%);
+
+    }
+    .card-collection{
+        width:100%;
+        height:inherit;
+        /* background-color: red; */
+        display: flex;
+    }
+    
+    .card1{
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PhishGuard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+    </head>
+<body>
+
+    <div class="nav">
+        <div class="logo">
+        </div>
+        <div class="space"></div>
+        <div class="menu">
+            <a href="/" style="margin-left:60px;">Home</a>
+            <a href="/validate">Validate Url</a>
+            <a href="/developers">Developers</a>
+        </div>
+       
+    </div>
+
+
+
+<div class="cnt">
+    
+    <div class="rt">
+        <img src="{{url_for('static',filename='images/home.jpeg')}}" height="457px" width="122%" style="float:right;margin-right:12px;margin-top:80px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+    </div>
+
+    <div class="lft">
+        <div class="wrapper1">
+            <h2>What is Phishing?</h2>
+            <hr>
+            <p>Phishing is a type of cyber attack where attackers attempt to deceive individuals into providing sensitive information, such as usernames, passwords, credit card numbers, or other personal details. This is typically done by masquerading as a trustworthy entity in electronic communications. Here are some key characteristics and methods of phishing:</p>
+
+            <p>Email Phishing: The most common form, where attackers send fraudulent emails that appear to come from reputable sources, such as banks, companies, or even friends. These emails often contain malicious links or attachments.</p>
+            <p>Spear Phishing: A more targeted form of phishing where attackers focus on specific individuals or organizations, often using personalized information to make the attack more convincing.</p>
+            <p>Clone Phishing: Attackers create a nearly identical copy of a legitimate email that has been previously sent, replacing legitimate links with malicious ones.</p>
+        </div>
+    </div>
+</div>
+
+<div class="cnt2">
+    <div class="wrapper1">
+        <h3>What is an URL?</h3>
+        <br>
+        <p>A URL (Uniform Resource Locator) is the address used to access resources on the internet.</p>
+    </div>
+
+    <div class="wrapper1">
+        <h3>Why should I bother Knowing what Phishing is all about?</h3>
+        <br>
+        <p>The purpose of phishing is to collect sensitive information with the intention of using that information to gain access to otherwise protected data, networks, etc. 
+            A phisher's success is contingent upon establishing trust with its victims.</p>
+    </div>
+
+    <div class="wrapper1">
+        <h3>Two Major Types of Phishing Attack?</h3>
+        <br>
+        <p><b>Deceptive phishing</b></p> <p>is by far the most common type of phishing scam. In this ploy, fraudsters impersonate a legitimate company to steal people’s personal data or login credentials. 
+            Those emails frequently use threats and a sense of urgency to scare users into doing what the attackers want.</p>
+
+        <p><b>Spear Phishing</b></p> <p>targets specific individuals instead of a wide group of people. Attackers often research their victims on social media and other sites. 
+            That way, they can customize their communications and appear more authentic.</p>
+    </div>
+
+    <div class="wrapper1">
+        <h3>How to Prevent and Protect Against Phishing As An End-user?</h3>
+        <br>
+        <p>To help prevent phishing attacks, you should observe general best practices, similar to those you might undertake to avoid viruses and other malware. 
+            First, make sure your systems are updated to help protect against known vulnerabilities. Protect devices and systems with reputable security software and firewall protection. 
+            You can also add software that watches for PII being sent over email or other insecure methods.
+            Since the weak link in phishing attacks is the end user, you should provide proper end-user security awareness training and educate your team on how to recognize a phishing scam. 
+            The key to protecting against phishing lies in the ability to recognize the cyberattack as illegitimate.</p>
+    </div>
+</div>
+    
+</body>
+</html>
